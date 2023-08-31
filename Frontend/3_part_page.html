@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Divide Screen into Three Vertical Parts</title>
+  <link rel="stylesheet" type="text/css" href="3_part_page.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <!-- Top part of the page with login, signup, and about sections -->
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="log_in.html">Login</a></li>
+            <li><a href="sign_up.html">Signup</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </header>
+  <div class="container">
+
+    <div class="left-side">
+        <div class="flashcard">
+          <div class="front">one</div>
+          <div class="back"></div>
+        </div>
+        <div class="flashcard">
+          <div class="front"></div>
+          <div class="back"></div>
+        </div>
+        <div class="flashcard">
+          <div class="front">last learned word</div>
+          <div class="back">last word</div>
+        </div>
+        
+        <script src="left_part.js"></script>   
+
+    </div>
+
+    <div class="middle-side">
+        <div class="flashcard-container">
+            <div class="flashcard">
+                <div class="front" id="question"></div>
+                <div class="back" id="answer"></div>
+            </div>
+            <div class="flashcard-actions">
+                <button class="know-button">Know It</button>
+                <button class="dont-know-button">don't know it</button>
+            </div>
+        </div>
+        <script src="middle_part.js"></script>    
+    </div>
+
+    <div class="right-side">
+      <!-- Content for the right side -->
+    </div>
+  </div>
+</body>
+</html>
